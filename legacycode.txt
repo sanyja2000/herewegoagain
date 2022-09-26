@@ -1,0 +1,52 @@
+        /*
+        if(mapGen.generatedMap[y*mapGen.mapWidth+x]%10 == 0){
+            if(x>0 && this.getDoneMapValue(x-1,y)!=1){
+                if(y<this.mapHeight-1 && this.getDoneMapValue(x,y+1)!=1){
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 3
+                }
+                else if(y>0 && this.getDoneMapValue(x,y-1)!=1){
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 2
+                }else{
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 3
+                }
+            }
+            else if(x<this.mapWidth-1 && this.getDoneMapValue(x+1,y)!=1){
+                
+                if(y<this.mapHeight-1 && this.getDoneMapValue(x,y+1)!=1){
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 4
+                }
+                else if(y>0 && this.getDoneMapValue(x,y-1)!=1){
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 5
+                }else{
+                    mapGen.generatedMap[y*mapGen.mapWidth+x] += 4
+                }
+            }else{
+                mapGen.generatedMap[y*mapGen.mapWidth+x] = 1
+            }
+        }else{
+            mapGen.generatedMap[y*mapGen.mapWidth+x] = 1
+        }*/
+
+
+                    /*
+                    if(x>0 && this.getMapValue(x-1,y)>this.thres){
+                        if(y>0 && this.getMapValue(x,y-1)>this.thres){
+                            this.generatedMap.push(4+mod)
+                            continue
+                        }
+                        else if(y<this.mapHeight-1 && this.getMapValue(x,y+1)>this.thres){
+                            this.generatedMap.push(5+mod)
+                            continue
+                        }
+                    }
+                    else if(x<this.mapWidth-1 && this.getMapValue(x+1,y)>this.thres){
+                        if(y>0 && this.getMapValue(x,y-1)>this.thres){
+                            this.generatedMap.push(3+mod)
+                            continue
+                        }
+                        else if(y<this.mapHeight-1 && this.getMapValue(x,y+1)>this.thres){
+                            this.generatedMap.push(2+mod)
+                            continue
+                        }
+                    }
+                    */

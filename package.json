@@ -1,0 +1,16 @@
+{
+  "name": "oxygenincluded",
+  "version": "1.0.0",
+  "description": "it might work tho",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "SandorTakacs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}

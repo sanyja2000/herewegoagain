@@ -1,0 +1,8 @@
+#name;amount;ing1;am1;ing2;am2;...
+Campfire;1;Match;1;Stone;2
+Tea;2;Nitrate;2;Seed;2;Ice;3
+PatternStone;2;Stone;4
+PatternStoneVer;2;Stone;4
+PatternStoneHor;2;Stone;4
+Door;1;Stone;6
+TNT;2;Stone;2

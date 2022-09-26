@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+*{padding:0;margin:0;}
+.pixelated {
+        image-rendering:optimizeSpeed;             /* Legal fallback */
+        image-rendering:-moz-crisp-edges;          /* Firefox        */
+        image-rendering:-o-crisp-edges;            /* Opera          */
+        image-rendering:-webkit-optimize-contrast; /* Safari         */
+        image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+        image-rendering:crisp-edges;               /* CSS4 Proposed  */
+        image-rendering:pixelated;                 /* CSS4 Proposed  */
+        -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+    }
+
+</style>
+<title>Ah shit, here we go again.</title>
+</head>
+<body>
+    <canvas id="myCanvas" class="pixelated">
+    </canvas>
+    <script src="clientjs/perlin.js"></script>
+    <script src="clientjs/socket.io.min.js"></script>
+
+    <script src="clientjs/audio.js"></script>
+    <script src="clientjs/logic.js"></script>
+    <script src="clientjs/ui.js"></script>
+    <script src="clientjs/renderer.js"></script>
+    <script src="clientjs/gameloop.js"></script>
+    <script>
+
+let WIDTH = window.innerWidth//320
+let HEIGHT = window.innerHeight//180
+
+let game = new Game();
+
+document.addEventListener("keydown",game.inputHandler.keyDownEvent.bind(game.inputHandler))
+document.addEventListener("keyup",game.inputHandler.keyUpEvent.bind(game.inputHandler))
+document.addEventListener("mousemove",game.inputHandler.mouseMoveEvent.bind(game.inputHandler))
+document.addEventListener("mousedown",game.inputHandler.mouseDownEvent.bind(game.inputHandler))
+document.addEventListener("mouseup",game.inputHandler.mouseUpEvent.bind(game.inputHandler))
+window.addEventListener("resize",game.renderer.documentResize.bind(game.renderer))
+window.oncontextmenu = function() { return false };
+    </script>
+</body>
+</html>

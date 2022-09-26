@@ -1,0 +1,16 @@
+campfire -> hot
+torch -> hot
+(algae torch?)
+consumables
+tea, hot soup -> hot
+
+door
+compressed stone
+
+
+enemies
+ -> cold attacks (spitting, throwing)
+bats? guano?
+
+
+overheating?
